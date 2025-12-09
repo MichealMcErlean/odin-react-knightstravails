@@ -82,35 +82,37 @@ function App() {
         <h3>Powered by React</h3>
       </header>
       <article>
-        <ChessBoard 
-          board={board}
-          onClick={handleClick}
-        />
-        <div className="buttonbox">
-          <button 
-            type="button"
-            onClick={handleStartPlacing}
-          >
-            Place Your Knight
-          </button>
-          <button 
-            type="button"
-            onClick={handleStartPlacingEnd}
-          >
-            Choose Your Destination
-          </button>
-          <button 
-            type='button'
-            onClick={handleEmbark}
-          >
-            Embark!
-          </button>
-          <button 
-            type="button"
-            onClick={handleReset}
-          >
-            Reset Board
-          </button>
+        <div className='contentbox'>
+          <ChessBoard
+            board={board}
+            onClick={handleClick}
+          />
+          <div className="buttonbox">
+            <button
+              type="button"
+              onClick={handleStartPlacing}
+            >
+              Place Your Knight
+            </button>
+            <button
+              type="button"
+              onClick={handleStartPlacingEnd}
+            >
+              Choose Your Destination
+            </button>
+            <button
+              type='button'
+              onClick={handleEmbark}
+            >
+              Embark!
+            </button>
+            <button
+              type="button"
+              onClick={handleReset}
+            >
+              Reset Board
+            </button>
+          </div>
         </div>
       </article>
       <footer>
